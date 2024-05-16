@@ -40,7 +40,6 @@ public class StudentController {
     @GetMapping("/search-by-course/{idCourse}")
     public ResponseEntity<?> findByIdCourse(@PathVariable Long idCourse) {
 
-
         return ResponseEntity.ok(studentService.findByIdCourse(idCourse));
 
 
